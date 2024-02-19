@@ -1,0 +1,146 @@
+@import "variables/colors.css";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1, h2 {
+    margin:0
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:linear-gradient(to right, rgb(12, 20, 40) 66%,rgb(18, 26, 47) 34%);
+    color:var(--clr-light);
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right:5%;
+    width:100vw;
+    height: 5vh;
+    margin-top: 2vh;
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap:10vw;
+}
+
+a {
+    color: var(--clr-light);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    font-style: italic;
+    background-color: var(--clr-highlight);
+    border-radius: 2px;
+    color:var(--clr-bgright);
+    padding:5px;
+    opacity: 0.8;
+}
+#contact-page:hover {
+    color: var(--clr-bgright);
+}
+
+@media (max-width:768px) {
+    a {
+        font-size:0.8rem;
+    }
+}
+
+#home-page {
+    text-decoration: underline;
+}
+
+#contact-page {
+    color:var(--clr-highlight);
+    border:1px solid var(--clr-highlight);
+    border-radius:2px;
+    padding:2px;
+    text-align: center;
+}
+
+#ab {
+    color: var(--clr-highlight);
+    padding-right: 2vh;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7%;
+    width: 80vw;
+    
+}
+
+@media (max-width:768px){
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        
+    }
+    #description {
+        width: 90%;
+        
+    }
+}
+
+.descript {
+    width: 40vh;
+    
+}
+
+
+
+#greenh2 {
+    color: var(--clr-highlight);
+}
+
+#profpic {
+    display: block;
+    width: 300px;   
+    border-radius:2px ;
+}
+
+#quicklinks {
+    position: fixed;
+    height: 25vh;
+    width: 5vh;
+    background-color:var(--clr-highlight);
+    right: 0;
+    bottom:35vh;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;  
+}
+
+.quicklink {
+    width: 4vh;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+#quicklink__CV {
+    color: var(--clr-bgleft);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin:0;   
+}
+
